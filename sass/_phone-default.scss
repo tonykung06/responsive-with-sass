@@ -1,0 +1,81 @@
+/*---Prevents iPhone from resizing in landscape mode---*/
+html {
+	-webkit-text-size-adjust: none;
+}
+
+/*---apply natural box layout model to all elements---*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+}
+
+header {
+	padding: 1em $gutter .5em;
+	border: 1px solid $light-grey;
+
+	h1, h2 {
+		display: none;
+	}
+
+	.logo {
+		float: left;
+
+		img {
+			height: 50px;
+		}
+	}
+}
+
+.social {
+	float: right;
+	padding-top: .5em;
+	z-index: 99;
+
+	img {
+		width: 2em;
+		height: 2em;
+	}
+
+	li {
+		float: right;
+
+		a {
+			display: block;
+			padding-left: 10px;
+		}
+	}
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $menu-color;
+	height: 50px;
+	width: 100%;
+}
+
+footer {
+	clear: both;
+	font-size: .8em;
+	text-align: center;
+	padding: 2em 0 .6em;
+	color: $brown;
+	font-weight: $heavy;
+
+	a {
+		color: $brown;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <header class="clearfix">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" />
+                <h1>Title</h1>
+                <h2>Sub-title</h2>
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="https://www.youtube.com">
+                        <img src="images/social_tube.png" alt="YouTube" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com">
+                        <img src="images/social_face.png" alt="Facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com">
+                        <img src="images/social_twit.png" alt="Twitter" />
+                    </a>
+                </li>
+            </ul>
+            <nav>
+                <ul class="primary-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="repair.html">Repair Options</a>
+                    </li>
+                    <li>
+                        <a href="prevention.html">Prevention</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <button class="nav-button">Toggle Navigation</button>
+            </nav>
+        </header>
+        <main>
+            <p>Nothing here yet</p>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2015</p>
+            <a class="tel" tabindex="-1" href="tel:(852) 123-4567">(852) 123-4567</a>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.nav-button').click(function() {
+                    $('.nav-button, .primary-nav').toggleClass('open');
+                });
+            });
+        </script>
+    </body>
+</html>
+

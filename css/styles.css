@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*---Prevents iPhone from resizing in landscape mode---*/
+html {
+  -webkit-text-size-adjust: none; }
+
+/*---apply natural box layout model to all elements---*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+header {
+  padding: 1em 2% 0.5em;
+  border: 1px solid #f0f0f3; }
+  header h1, header h2 {
+    display: none; }
+  header .logo {
+    float: left; }
+    header .logo img {
+      height: 50px; }
+
+.social {
+  float: right;
+  padding-top: .5em;
+  z-index: 99; }
+  .social img {
+    width: 2em;
+    height: 2em; }
+  .social li {
+    float: right; }
+    .social li a {
+      display: block;
+      padding-left: 10px; }
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #a8c6ef;
+  height: 50px;
+  width: 100%; }
+
+footer {
+  clear: both;
+  font-size: .8em;
+  text-align: center;
+  padding: 2em 0 .6em;
+  color: #a47827;
+  font-weight: 700; }
+  footer a {
+    color: #a47827; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 45em) {
+  header .logo img {
+    width: auto; }
+  header .social {
+    position: relative;
+    float: right; } }
+@media only screen and (min-width: 64.25em) {
+  header, nav, main, footer {
+    max-width: 1028px;
+    margin: 0 auto; }
+
+  header {
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 1em; }
+
+  nav {
+    position: relative;
+    background-color: transparent;
+    clear: right;
+    padding-top: .6em; }
+    nav ul {
+      float: right;
+      width: auto; }
+      nav ul li {
+        float: left; }
+        nav ul li a {
+          display: block;
+          color: #a8c6ef;
+          text-decoration: none;
+          text-transform: uppercase;
+          border-top: 2px solid rgba(0, 0, 0, 0.1);
+          font-size: .9em;
+          padding: .7em .9em;
+          transition: background 0.3s linear; }
+          nav ul li a:hover {
+            background-color: rgba(0, 0, 0, 0.1); }
+        nav ul li.active a {
+          border-top: 3px solid #a8c6ef; } }
+.nav-button {
+  display: none; }
+
+/* hide the navigation button by default */
+@media only screen and (min-width: 0px) and (max-width: 64.25em) {
+  /* Navigation Button
+  -------------------------------------------------------- */
+  .nav-button {
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 2%;
+    width: 50px;
+    height: 35px;
+    background: url("../images/menu-icon-large.png"), -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background: url("../images/menu-icon-large.png"), -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background: url("../images/menu-icon-large.png"), -ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background: url("../images/menu-icon-large.png"), -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 21px, 100%;
+    cursor: pointer;
+    border: 0 none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7) inset;
+    border-radius: 5px;
+    z-index: 999;
+    text-indent: -9999px; }
+
+  .nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+  .nav-button.open {
+    background: url("../images/close-icon-large.png"), -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background: url("../images/close-icon-large.png"), -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background: url("../images/close-icon-large.png"), -ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background: url("../images/close-icon-large.png"), -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 21px, 100%; }
+
+  /* Navigation Bar
+  -------------------------------------------------------- */
+  body {
+    padding-top: 50px; }
+
+  .primary-nav {
+    width: 200px;
+    float: none;
+    background-color: #a8c6ef;
+    /* change the menu color */
+    display: block;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 998;
+    clear: both; }
+
+  .primary-nav li {
+    display: none;
+    width: 100%;
+    font-family: "Quicksand", sans-serif; }
+
+  .primary-nav li a {
+    display: block;
+    width: 90%;
+    padding: 10px 5%;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+  .primary-nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-color: transparent; }
+
+  .primary-nav > li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+  /* Toggle the navigation bar open  */
+  .primary-nav.open {
+    height: auto;
+    padding-top: 50px; }
+
+  .primary-nav.open li {
+    display: block; }
+
+  /* Submenus optional .parent class indicates dropdowns */
+  .primary-nav > li:hover > a {
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-color: transparent; }
+
+  .primary-nav li.parent > a:after {
+    content: "\25BC";
+    color: rgba(255, 255, 255, 0.5);
+    float: right; }
+
+  .primary-nav li.parent > a:hover {
+    background: rgba(0, 0, 0, 0.75); }
+
+  .primary-nav li ul {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 0 none;
+    padding: 0; }
+
+  .primary-nav li ul a {
+    border: 0 none;
+    font-size: 12px;
+    padding: 10px 5%;
+    font-weight: normal; }
+
+  .primary-nav li:hover ul {
+    display: block;
+    border-top: 0 none; } }
+/* End Mobile Styles */
+
+/*# sourceMappingURL=styles.css.map */
